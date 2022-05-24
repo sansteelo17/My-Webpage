@@ -1,0 +1,313 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.unsplash.com/photo-1524758631624-e2822e304c36?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyNnx8fGVufDB8fHx8&auto=format&fit=crop&w=600);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.navbar {
+    width: 90%;
+    padding: 3rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    opacity: 0.8;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 2rem;
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+}
+
+
+.my-link {
+    display: inline-block;
+    margin-left: 1.3rem;
+}
+
+.my-link a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+    font-weight: bold;
+    font-size: 1rem;
+    border-bottom: 0px solid #FCAFAF;
+    padding-bottom: 0.5rem;
+    transition: 0.4s ease-in-out;
+    letter-spacing: 0.05rem;
+}
+
+.my-link a:hover {
+    border-bottom: 2px solid #FCAFAF;
+}
+
+.main-section {
+    width: 100%;
+}
+
+.info {
+    width: 80%;
+    border: 1px solid #FCAFAF;
+    border-width: 70%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: 3rem;
+    border-radius: 1.5rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.text {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+}
+
+.design {
+    color: white;
+    opacity: 0.8;
+    font-size: 4.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.paragraph {
+    width: 60%;
+    text-align: center;
+    color: white;
+    opacity: 0.8;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+
+.btn {
+    background-color: transparent;
+    color: white;
+    opacity: 0.8;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    border: 1px solid #FCAFAF;
+    border-radius: 1.5rem;
+    margin-left: 1rem;
+    padding: 1rem 3.5rem;
+    text-decoration: none;
+    margin-top: 1.3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.color {
+    background-color: #FCAFAF;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 1s ease-in-out;
+}
+
+.btn:hover {
+    border: none;
+}
+
+.btn:hover .color {
+    width: 100%;
+}
+
+.btns {
+    background-color: #FCAFAF;
+    color: white;
+    opacity: 0.8;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    border: 1px solid transparent;
+    border-radius: 1.5rem;
+    margin-left: 1rem;
+    padding: 1rem 3.5rem;
+    text-decoration: none;
+    margin-top: 1.3rem;
+    position: relative;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+}
+
+.colors {
+    background-color: white;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 1s ease-in-out;
+}
+
+.btns:hover {
+    border: 1px solid #FCAFAF;
+    color: black;
+    opacity: 0.8;
+}
+
+.btns:hover .colors {
+    width: 100%;
+}
