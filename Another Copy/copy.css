@@ -163,6 +163,8 @@ html {
     padding-left: 2rem;
     cursor: pointer;
     letter-spacing: 0.2rem;
+    padding-right: 1.5rem;
+    border-right: 2px solid #FCAFAF;
 }
 
 
