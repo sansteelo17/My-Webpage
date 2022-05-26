@@ -141,7 +141,7 @@ html {
 .main {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.unsplash.com/photo-1524758631624-e2822e304c36?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyNnx8fGVufDB8fHx8&auto=format&fit=crop&w=600);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(https://images.unsplash.com/photo-1524758631624-e2822e304c36?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyNnx8fGVufDB8fHx8&auto=format&fit=crop&w=600);
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
@@ -164,7 +164,13 @@ html {
     cursor: pointer;
     letter-spacing: 0.2rem;
     padding-right: 1.5rem;
-    border-right: 2px solid #FCAFAF;
+    border-right: 1px dotted #FCAFAF;
+}
+
+.rior {
+    color: #FCAFAF;
+    font-weight: lighter;
+    letter-spacing: 0rem;
 }
 
 
@@ -172,6 +178,7 @@ html {
     display: inline-block;
     margin-left: 1.3rem;
 }
+
 
 .my-link a {
     text-decoration: none;
@@ -181,12 +188,30 @@ html {
     font-size: 1rem;
     border-bottom: 0px solid #FCAFAF;
     padding-bottom: 0.5rem;
-    transition: 0.4s ease-in-out;
+    transition: 0.5s ease-in;
     letter-spacing: 0.05rem;
 }
 
 .my-link a:hover {
-    border-bottom: 2px solid #FCAFAF;
+    border-bottom: 1px dotted #FCAFAF;
+    color: #FCAFAF;
+}
+
+
+#backYard a:hover {
+    color: #FCAFAF;
+}
+
+.rior a {
+    color: white;
+    border-bottom: 1px dotted #FCAFAF;
+    padding-bottom: 0.5rem;
+    transition: 0.5s ease-in;
+}
+
+.rior a:hover {
+    border-bottom: 1px dotted white;
+    color: #FCAFAF;
 }
 
 .main-section {
@@ -195,7 +220,7 @@ html {
 
 .info {
     width: 80%;
-    border: 1px solid #FCAFAF;
+    border: 1px dotted #FCAFAF;
     border-width: 70%;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -219,7 +244,7 @@ html {
     color: white;
     opacity: 0.8;
     font-size: 4.5rem;
-    font-weight: bold;
+    font-weight: lighter;
     letter-spacing: 0.1rem;
     text-align: center;
     margin-bottom: 1.5rem;
@@ -231,7 +256,7 @@ html {
     color: white;
     opacity: 0.8;
     font-size: 0.8rem;
-    font-weight: bold;
+    font-weight: lighter;
     letter-spacing: 0.1rem;
     text-transform: capitalize;
     line-height: 1.5;
@@ -244,9 +269,9 @@ html {
     color: white;
     opacity: 0.8;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: lighter;
     letter-spacing: 0.1rem;
-    border: 1px solid #FCAFAF;
+    border: 1px dotted #FCAFAF;
     border-radius: 1.5rem;
     margin-left: 1rem;
     padding: 1rem 3.5rem;
@@ -264,7 +289,7 @@ html {
     left: 0;
     bottom: 0;
     z-index: -1;
-    transition: 1s ease-in-out;
+    transition: 1s ease-in;
 }
 
 .btn:hover {
@@ -290,7 +315,7 @@ html {
     margin-top: 1.3rem;
     position: relative;
     overflow: hidden;
-    transition: 1s ease-in-out;
+    transition: 1s ease-in;
 }
 
 .colors {
@@ -301,7 +326,7 @@ html {
     left: 0;
     bottom: 0;
     z-index: -1;
-    transition: 1s ease-in-out;
+    transition: 1s ease-in;
 }
 
 .btns:hover {
